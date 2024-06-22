@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet16.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7720a8dbc8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <p>SPLI</p>
+        <p>TTER</p>
+    </header>
+    <main>
+        <aside>
+            <label for="price">Bill</label>
+            <div class="i">
+            <input type="number" name="price" id="price" placeholder="0">
+            <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+            <label for="Tip">Select Tip %</label>
+            <div class="percents">
+                <button id="tipPercent">5%</button>
+                <button id="tipPercent">10%</button>
+                <button id="tipPercent">15%</button>
+                <button id="tipPercent">25%</button>
+                <button id="tipPercent">50%</button>
+                <input oninput="focus()" type="number" name="customTip" id="customTip" placeholder="Custom">
+            </div>
+            <div class="people">
+            <label for="numberPeople"> Number of People</label>
+            <p id="error" class="hidden">Can't be zero</p>
+        </div>
+        <div class="i">
+            <input type="number" name="numberPeople" id="numberPeople" placeholder="0">
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </aside>
+        <section>
+            <div class="div">
+                <div class="titleTip">
+                    <p class="amoutTotal">Tip Amount</p>
+                    <p class="person">/ person</p>
+                </div>
+                <h1 id="TipAmount">$0.00</h1>
+            </div>
+            <div class="div">
+                <div class="titleTip">
+                    <p class="amoutTotal">Total</p>
+                    <p class="person">/ person</p>
+                </div>
+                <h1 id="TotalPerson">$0.00</h1>
+            </div>
+            <button id="reset">Reset</button>
+           
+        </section>
+    </main>
+
+
+    <script src="projet16.js"></script>
+</body>
+</html>

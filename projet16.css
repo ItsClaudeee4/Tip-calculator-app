@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:hsl(185, 41%, 84%) ;
+}
+
+header p{
+    color:hsl(183, 100%, 15%);
+    font-weight: 600;
+    letter-spacing: 5px;
+    width: 10px;
+}
+header {
+    margin-bottom: 50px;
+}
+main{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    max-width: 800px;
+}
+aside{
+    width:100% ;
+}
+label{
+    color: hsl(186, 14%, 43%);
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+input{
+    background-color: hsl(189, 41%, 97%) ;
+    border: none;
+    padding: 8px 8px 8px 15px;
+    text-align: end;
+    font-size: 16px;
+    font-weight: 600;
+    color:hsl(183, 100%, 15%) ;
+    outline: none;
+    cursor: pointer;
+    border: solid 2px  hsl(189, 41%, 97%);
+}
+input:focus{
+    border: solid 2px  hsl(172, 67%, 45%);
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; }
+
+#price{
+    width: 100%;
+}
+#price::placeholder{
+    color: hsla(186, 14%, 56%, 0.727) ;
+}
+.i{
+    position: relative;
+    margin-bottom: 30px;
+}
+.i i{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: hsla(186, 14%, 56%, 0.727) ;
+}
+.percents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.percents button{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.percents button:focus{
+    background-color:  hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.percents input{
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+.percents input::placeholder{
+    color: hsl(186, 14%, 43%);
+}
+.people{
+    display: flex;
+    justify-content: space-between;
+}
+#error{
+    font-size: 12px;
+    color:red ;
+    font-weight: 600;
+}
+#numberPeople{
+    width: 100%;
+}
+section{
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div:first-of-type{
+    margin-bottom: 30px;
+}
+.amoutTotal{
+    color: white;
+    font-size: 16px;
+}
+.person{
+    color:hsl(186, 14%, 43%) ;
+    font-size: 14px;
+    font-weight: 600;
+}
+h1{
+    color:hsl(172, 67%, 45%) ;
+    font-size: 36px;
+}
+
+#reset{
+    width: 100%;
+    margin-top: auto;
+    background-color:hsl(172, 67%, 45%) ;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:hsl(183, 100%, 15%) ;
+    cursor: pointer;
+}
+#reset:hover {
+    background-color:hsl(183, 63%, 71%)  ;
+}
+.hidden{
+    display: none;
+}
+
+@media (max-width:600px){
+    header{
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    body{
+        height: auto;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .percents{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    #reset{
+        margin-top: 20px;
+    }
+}
